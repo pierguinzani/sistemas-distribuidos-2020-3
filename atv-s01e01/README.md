@@ -22,7 +22,7 @@ Exemplo:
 
 <img width="400" height="300" src="assets/exemplo-sistema-distribuido.png"> 
 
-### - Vantagens
+### Vantagens
 
 - Economia: melhor relação custo/desempenho
 - Eficiência: maior poder total de computação
