@@ -1,7 +1,7 @@
 
   <img width="1000" height="400" src="assets/apresentacao.jpg">
 
-# Classificação de Hardware com várias CPUs
+# 💻 Classificação de Hardware com várias CPUs 💻
 
 A classificação de hardware de sistemas com várias CPUs é feita com base em algumas características
 ## Organização e distribuição do sistema de memória
