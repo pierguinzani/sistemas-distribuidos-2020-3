@@ -4,6 +4,7 @@
 # 💻 Tipos de sistemas distribuídos 💻
 
 ## Sistemas de Computação Distribuídos 
+
 Utilizada para tarefas de computação de alto desempenho. Geralmente, utilizados para processamento de grandes conjuntos de dados (Computação intensiva)
 
 - Computação em cluster
@@ -20,6 +21,8 @@ Utilizada para tarefas de computação de alto desempenho. Geralmente, utilizado
   - Processamentos de dados climáticos
 
 ## Sistemas de Informação Distribuídos 
+
+Têm como característica a integração das aplicações existentes. O principal desafio é a interoperabilidade das aplicações, isto é, uma aplicação conseguir “conversar” com a outra aplicação.
 
 ## Sistemas Pervasivos
 
