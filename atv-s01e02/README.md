@@ -1,5 +1,7 @@
 
-  <img width="1000" height="400" src="assets/apresentacao.jpg">
+  
+  ![sd](https://raw.githubusercontent.com/pierguinzani/sistemas-distribuidos-2020-3/master/atv-s01e02/assets/apresentacao.jpg)
+ 
 
 # 💻 Classificação de Hardware com várias CPUs 💻
 
