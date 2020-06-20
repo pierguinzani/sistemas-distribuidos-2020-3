@@ -3,9 +3,6 @@
 
 # 💻 Tipos de sistemas distribuídos 💻
 
-A classificação de hardware de sistemas com várias CPUs é feita com base em algumas características
-## Organização e distribuição do sistema de memória
-
 ## Sistemas de Computação Distribuídos 
 Utilizada para tarefas de computação de alto desempenho. Geralmente, utilizados para processamento de grandes conjuntos de dados (Computação intensiva)
 
