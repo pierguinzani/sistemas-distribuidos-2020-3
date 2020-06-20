@@ -1,4 +1,5 @@
 
+![sd](https://user-images.githubusercontent.com/49373874/85213024-5c347d00-b32f-11ea-81fd-23e909e7f4b4.jpeg)
 
 
 # 💻 Tipos de sistemas distribuídos 💻
@@ -49,3 +50,15 @@ Sistemas Distribuídos em que nós são pequenos, mantidos por bateria, móveis,
   - Sistemas equipados com sensores organizados sobre o corpo humano (BAN – Body Area Network).
 - Redes de sensores
   - consiste em dezenas a centenas de milhares de nós relativamente pequenos, cada um equipado com um dispositivo de sensoriamento
+
+## Middleware
+
+Sistema que se encontra entre o sistema operacional e os aplicativos nele executados. Funcionando de forma essencial como uma camada oculta de tradução, o middleware permite a comunicação e o gerenciamento de dados para aplicativos distribuídos.
+
+Serviços típicos:
+
+- Facilidades de comunicação
+- Nomeação
+- Persistência
+- Transações distribuı́das
+- Segurança
