@@ -24,5 +24,28 @@ Utilizada para tarefas de computação de alto desempenho. Geralmente, utilizado
 
 Têm como característica a integração das aplicações existentes. O principal desafio é a interoperabilidade das aplicações, isto é, uma aplicação conseguir “conversar” com a outra aplicação.
 
+- Sistema de Processamento de Transação
+  - Em geral, são aplicações centradas em transações de banco de dados. A aplicação é formada por um conjunto de transações.
+As transações devem ser:
+    - **Atómicas**: transação é indivisível
+    - **Consistentes**: não viola invariantes do sistema
+    - **Isoladas**: Permite transações concorrentes
+    - **Duráveis**: após o “commit” de uma transão as alterações feitas ficam gravadas
+    
+- Integração de Aplicações Empresariais
+  - São sistemas onde os componentes de aplicações se comunicam diretamente um com o outro, e não por meio de um sistema de processamento de transação.  
+Muitos modelos de comunicação entre aplicações:
+    - **Chamadas de procedimento remoto** (RPC – Remote Procedure Calls)
+    - **Inovações de método remoto** (RMI – Remote Method Invocations)
+    - **Middleware orientado a mensagem** (MOM – Message-oriented Middleware)
+
 ## Sistemas Pervasivos
 
+Sistemas Distribuídos em que nós são pequenos, mantidos por bateria, móveis, passíveis de conexão através de rede sem fio e geralmente embutidos em um sistema maior.
+
+- Sistemas domésticos 
+  - Sistemas que apresentam um ou mais computadores pessoais, televisão, backup, celulares, geladeira, câmeras de vigilância, iluminação interlogados aravés de uma rede.
+- Sistemas de saúde distribuídos
+  - Sistemas equipados com sensores organizados sobre o corpo humano (BAN – Body Area Network).
+- Redes de sensores
+  - consiste em dezenas a centenas de milhares de nós relativamente pequenos, cada um equipado com um dispositivo de sensoriamento
