@@ -1,0 +1,38 @@
+ 
+syntax = "proto3";
+
+service RafaelsService {
+    rpc PegaCardapio (Vazio) returns (ListaCardapio) {}
+    rpc PegaItem (ItemById) returns (Cardapio) {}
+    rpc InsereItem (Cardapio) returns (Cardapio) {}
+    rpc AtualizaItem (Cardapio) returns (Cardapio) {}
+    rpc RemoveItem (ItemById) returns (Vazio) {}
+    rpc PegaCarrinho (Vazio) returns (ListaCarrinho) {}
+    
+}
+
+message Vazio {}
+
+message Cardapio {
+    string id = 1;
+    string item = 2;
+    string preco = 3;
+}
+
+message Carrinho {
+    string id = 1;
+    string item = 2;
+    string preco = 3;
+}
+
+message ListaCardapio {
+    repeated Cardapio cardapio = 1;
+}
+
+message ListaCarrinho {
+    string total=1;
+}
+
+message ItemById {
+    string id = 1;
+}
