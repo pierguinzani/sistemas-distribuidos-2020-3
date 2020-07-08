@@ -134,4 +134,15 @@ Item removido do cardápio com sucesso. -> {"id":"2"}
 ```
 
 
-#### Faça os testes utilizando o POSTMAN ou outro app de Rquisições HTTP, ou o client.js com axios
+#### Faça os testes utilizando o POSTMAN ou outro app de Requisições HTTP, ou o arquivo rafaels_client.js
+
+### Como rodar este projeto
+
+- Clone este repositório com
+```json
+git clone https://github.com/pierguinzani/sistemas-distribuidos-2020-3/
+```
+- Instale as bibliotecas e rode o projeto com
+```json
+yarn & yarn start
+```
