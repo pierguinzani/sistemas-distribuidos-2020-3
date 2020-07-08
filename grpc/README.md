@@ -136,7 +136,7 @@ Item removido do cardápio com sucesso. -> {"id":"2"}
 
 #### Faça os testes utilizando o POSTMAN ou outro app de Requisições HTTP, ou o arquivo rafaels_client.js
 
-### Como rodar este projeto
+### :cyclone: Como rodar este projeto :octocat:
 
 - Clone este repositório com
 ```json
