@@ -12,7 +12,7 @@ var packageDefinition = protoLoader.loadSync(PROTO_PATH, {
 
 const RafaelsService = grpc.loadPackageDefinition(packageDefinition).RafaelsService;
 const client = new RafaelsService(
-	"localhost:30043",
+	"localhost:3043",
 	grpc.credentials.createInsecure()
 );
 

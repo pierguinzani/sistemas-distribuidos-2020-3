@@ -1,6 +1,6 @@
 const client = require('./client');
 
-//Lista Cardapio de Lanches
+// Lista Cardapio de Lanches
 const listaCardapio = () => {
   client.PegaCardapio(null, (err, data) => {
     if (!err) {

@@ -6,6 +6,10 @@ const app = express();
 app.use(express.json())
 app.use(express.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
 
+app.get('/',(req,res) => {
+  res.send('index.html')
+})
+
 app.get("/listaCardapio",(req,res) => {
   client.PegaCardapio(null, (err, data) => {
     if (!err) {
@@ -58,7 +62,8 @@ app.delete("/deleteItem/:id",(req,res)=>{
 })
 
 
-const PORT = process.env.PORT || 3001;
+const PORT =  process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log("Server running at port %d", PORT);
 });
+

@@ -30,7 +30,7 @@ message ListaCardapio {
 
 message ListaCarrinho {
     string total=1;
-    string carrinho=2;
+    repeated Carrinho carrinho=2;
 }
 
 message ItemById {

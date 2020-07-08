@@ -53,7 +53,7 @@ server.addService(rafaelsProto.RafaelsService.service, {
 			console.log (carrinho[i])
 			total = total + parseFloat(carrinho[i].preco)
 		}
-		carrinho = JSON.stringify(carrinho);
+		// carrinho = JSON.stringify(carrinho);
 		console.log(total)
 		callback(null, { total,carrinho });
 		carrinho = [];
@@ -85,7 +85,7 @@ server.addService(rafaelsProto.RafaelsService.service, {
 	},
 	
 });
-
-server.bind("127.0.0.1:30043", grpc.ServerCredentials.createInsecure());
-console.log("Server running at http://127.0.0.1:30043");
+let PORT = 3043;
+server.bind("127.0.0.1:"+PORT, grpc.ServerCredentials.createInsecure());
+console.log("Server running at https://127.0.0.1:"+PORT);
 server.start();
