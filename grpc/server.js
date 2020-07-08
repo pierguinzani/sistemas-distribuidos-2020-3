@@ -24,7 +24,11 @@ let cardapio = [
 	{ id: 6, item: "Macarronada Pequena", preco: "15.90" }
 
 ];
-let carrinho = [];
+let carrinho = [
+	{ id: 3, item: "Rafael's Classic Burguer", preco: '25.90' },
+	{ id: 2, item: "Rafael's Bacon Burguer", preco: '28.90' },
+	{ id: 1, item: "Rafael's Cheddar Burguer", preco: '30.90' }
+];
 
 
 server.addService(rafaelsProto.RafaelsService.service, {
@@ -36,7 +40,7 @@ server.addService(rafaelsProto.RafaelsService.service, {
 		let item = cardapio.find(n => n.id == call.request.id);
 
 		if (item) {
-			
+
 			carrinho.push(item);
 			callback(null, item);
 		} else {
@@ -49,9 +53,13 @@ server.addService(rafaelsProto.RafaelsService.service, {
 
 	PegaCarrinho: (_, callback) => {
 		let total = 0;
-		for (i in carrinho){
-			console.log (carrinho[i])
+		for (i in carrinho) {
+			console.log(carrinho[i])
 			total = total + parseFloat(carrinho[i].preco)
+		}
+		let pedido = {
+			carrinho,
+			total
 		}
 		console.log(total)
 		callback(null, { total });
@@ -96,7 +104,7 @@ server.addService(rafaelsProto.RafaelsService.service, {
 			});
 		}
 	},
-	
+
 });
 
 server.bind("127.0.0.1:30043", grpc.ServerCredentials.createInsecure());
