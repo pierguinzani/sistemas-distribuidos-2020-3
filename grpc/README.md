@@ -78,18 +78,19 @@ Deve retornar uma resposta semelhante a essa:
 
 ```json
 {
-    "total": "51.8",
-    "carrinho": [
-        {
-            "id": 4,
-            "item": "Macarronada Grande",
-            "preco": "25.90"
-        },
-        {
-            "id": 3,
-            "item": "Rafael's Classic Burguer",
-            "preco": 25.90
-        }]
+  "carrinho": [
+    {
+      "id": "2",
+      "item": "Rafael's Bacon Burguer",
+      "preco": "28.90"
+    },
+    {
+      "id": "3",
+      "item": "Rafael's Classic Burguer",
+      "preco": "25.90"
+    }
+  ],
+  "total": "54.8"
 }
 
 ```
