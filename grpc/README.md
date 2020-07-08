@@ -130,7 +130,7 @@ DELETE https://rafaels-grpc-api.herokuapp.com//deleteItem/idItem
 Deve retornar uma resposta semelhante a essa:
 
 ```json
-Item removido do cardápio com sucesso. -> {"id":"8","item":"Rafael's Podrão Burguer","preco":"15.90"}
+Item removido do cardápio com sucesso. -> {"id":"2"}
 ```
 
 
