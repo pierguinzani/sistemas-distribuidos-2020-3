@@ -24,11 +24,7 @@ let cardapio = [
 	{ id: 6, item: "Macarronada Pequena", preco: "15.90" }
 
 ];
-let carrinho = [
-	{ id: 3, item: "Rafael's Classic Burguer", preco: '25.90' },
-	{ id: 2, item: "Rafael's Bacon Burguer", preco: '28.90' },
-	{ id: 1, item: "Rafael's Cheddar Burguer", preco: '30.90' }
-];
+let carrinho = [];
 
 
 server.addService(rafaelsProto.RafaelsService.service, {
@@ -40,7 +36,7 @@ server.addService(rafaelsProto.RafaelsService.service, {
 		let item = cardapio.find(n => n.id == call.request.id);
 
 		if (item) {
-
+			
 			carrinho.push(item);
 			callback(null, item);
 		} else {
@@ -53,16 +49,14 @@ server.addService(rafaelsProto.RafaelsService.service, {
 
 	PegaCarrinho: (_, callback) => {
 		let total = 0;
-		for (i in carrinho) {
-			console.log(carrinho[i])
+		for (i in carrinho){
+			console.log (carrinho[i])
 			total = total + parseFloat(carrinho[i].preco)
 		}
-		let pedido = {
-			carrinho,
-			total
-		}
+		carrinho = JSON.stringify(carrinho);
 		console.log(total)
-		callback(null, { total });
+		callback(null, { total,carrinho });
+		carrinho = [];
 	},
 
 	InsereItem: (call, callback) => {
@@ -73,21 +67,6 @@ server.addService(rafaelsProto.RafaelsService.service, {
 		callback(null, item);
 	},
 
-	AtualizaItem: (call, callback) => {
-		let existingCustomer = cardapio.find(n => n.id == call.request.id);
-
-		if (existingCustomer) {
-			existingCustomer.name = call.request.name;
-			existingCustomer.age = call.request.age;
-			existingCustomer.address = call.request.address;
-			callback(null, existingCustomer);
-		} else {
-			callback({
-				code: grpc.status.NOT_FOUND,
-				details: "Not found"
-			});
-		}
-	},
 
 	RemoveItem: (call, callback) => {
 		let indexItemExistente = cardapio.findIndex(
@@ -104,7 +83,7 @@ server.addService(rafaelsProto.RafaelsService.service, {
 			});
 		}
 	},
-
+	
 });
 
 server.bind("127.0.0.1:30043", grpc.ServerCredentials.createInsecure());
