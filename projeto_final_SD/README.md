@@ -1,11 +1,11 @@
 
 <h1 align="center">
-   Sistema de Pedidos Online
+   Papaléguas
 </h1>
 
 <div align="center">
 
-  #### Papaléguas - Sistema de pedidos online integrado ao WhatsApp
+  #### Sistema de pedidos online integrado ao WhatsApp
 
   ![](https://img.shields.io/badge/autor-Pier%20Guinzani-purple)
   ![](https://img.shields.io/badge/autor-Augusto%20Zanoni-orange)
