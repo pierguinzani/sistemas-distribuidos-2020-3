@@ -7,10 +7,11 @@
 
   #### Papaléguas - Sistema de pedidos online integrado ao WhatsApp
 
-  ![](https://img.shields.io/badge/autor-Pier%20Guinzani-brightgreen)
+  ![](https://img.shields.io/badge/autor-Pier%20Guinzani-blumarine)
   ![](https://img.shields.io/badge/autor-Augusto%20Zanoni-orange)
   ![](https://img.shields.io/badge/Back--End-NodeJS-blue)
   ![](https://img.shields.io/badge/Front--End-ReactJS-yellow)
+  ![](https://img.shields.io/badge/Integraçãp-WhatsApp-brightgreen)
   
 </div> 
 
@@ -74,6 +75,7 @@ yarn
 ```
 yarn start
 ```
+- Acesse o projeto em http://localhost:3000
 ## :memo: Licença
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
