@@ -1,149 +1,85 @@
-# Rafael's gRPC API
 
-## Disponível em https://rafaels-grpc-api.herokuapp.com
+<h1 align="center">
+   Sistema de Pedidos Online
+</h1>
 
-### Consultar cardápio 
+<div align="center">
 
-- Consulte o menu utilizando o método GET 
-```http
-GET https://rafaels-grpc-api.herokuapp.com/listaCardapio
-```
-Deve retornar uma resposta semelhante a essa:
+  #### Papaléguas - Sistema de pedidos online integrado ao WhatsApp
 
-```json
-{
-    "cardapio": [
-        {
-            "id": "1",
-            "item": "Rafael's Cheddar Burguer",
-            "preco": "30.90"
-        },
-        {
-            "id": "2",
-            "item": "Rafael's Bacon Burguer",
-            "preco": "28.90"
-        },
-        {
-            "id": "3",
-            "item": "Rafael's Classic Burguer",
-            "preco": "25.90"
-        },
-        {
-            "id": "4",
-            "item": "Macarronada Grande",
-            "preco": "25.90"
-        },
-        {
-            "id": "5",
-            "item": "Macarronada Média",
-            "preco": "20.90"
-        },
-        {
-            "id": "6",
-            "item": "Macarronada Pequena",
-            "preco": "15.90"
-        }
-    ]
-}
+  ![](https://img.shields.io/badge/autor-Pier%20Guinzani-brightgreen)
+  ![](https://img.shields.io/badge/autor-Augusto%20Zanoni-orange)
+  ![](https://img.shields.io/badge/Back--End-NodeJS-blue)
+  ![](https://img.shields.io/badge/Front--End-ReactJS-yellow)
+  
+</div> 
 
-```
-
-### Faça seu pedido
-
-- Adicione um item no carrinho através do método POST
-```http
-GET https://rafaels-grpc-api.herokuapp.com/itemById/idPedido
-```
-| Parâmetro | Tipo | 
-| :--- | :--- | 
-| `idPedido` | `int` |
-
-Deve retornar uma resposta semelhante a essa:
-
-```json
-{
-    "id": "3",
-    "item": "Rafael's Classic Burguer",
-    "preco": "25.90"
-}
-```
-
-### Consultar carrinho para solicitar entrega 
-
-- Consulte o carrinho utilizando o método GET 
-```http
-GET https://rafaels-grpc-api.herokuapp.com/listaCarrinho
-```
-Deve retornar uma resposta semelhante a essa:
-
-```json
-{
-  "carrinho": [
-    {
-      "id": "2",
-      "item": "Rafael's Bacon Burguer",
-      "preco": "28.90"
-    },
-    {
-      "id": "3",
-      "item": "Rafael's Classic Burguer",
-      "preco": "25.90"
-    }
-  ],
-  "total": "54.8"
-}
-
-```
-
- ## Ferramentas ADMINISTRATIVAS
-### Adicione um novo Item ao Cardápio
-
-- Insira um item no cardápio através do metodo POST
-```http
-POST https://rafaels-grpc-api.herokuapp.com/inserirItem
-```
-Passando como parâmetro no body o item e o preço no formato JSON
+<p align="center">
+💻 Projeto Final da Disciplina de Sistemas Distribuídos 💻
+</p>
 
 
-```json
-{
-    "item": "Rafael's Podrão Burguer",
-    "preco": "15.90"
-}
-```
+<p align="center">
+  <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-como-contribuir">Como contribuir</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-licença">Licença</a>
+</p>
 
-Deve retornar uma mensagem semelhante a essa:
+<br>
 
-```json
-Item inserido no cardápio com sucesso. -> {"id":"8","item":"Rafael's Podrão Burguer","preco":"15.90"}
-```
+## :rocket: Tecnologias
 
-### Remover Item do Cardápio
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- Remova um Item através do método DELETE
-```http
-DELETE https://rafaels-grpc-api.herokuapp.com//deleteItem/idItem
-```
-| Parâmetro | Tipo | 
-| :--- | :--- | 
-| `idItem` | `int` |
+- [Node.js](https://nodejs.org/en/)
+- [React](https://reactjs.org)
+- [HTML](https://www.w3.org/History/19921103-hypertext/hypertext/WWW/TheProject.html)
+- [CSS](https://devdocs.io/css/)
+- [Express](https://expressjs.com/pt-br/)
+- [Axios](https://www.axios.com)
 
-Deve retornar uma resposta semelhante a essa:
+## 💻 Projeto
 
-```json
-Item removido do cardápio com sucesso. -> {"id":"2"}
-```
+O **Papaléguas** é um sistema de pedidos online da Hamburgueria ludovicense Artesanal Ayres, que integrado ao WhatsApp facilita o processo de padronização dos pedidos e direcionamento para apenas um canal (o WhatsApp).
 
-
-#### Faça os testes utilizando o POSTMAN ou outro app de Requisições HTTP, ou o arquivo rafaels_client.js
-
-### :cyclone: Como rodar este projeto :octocat:
+## 🤔 Como rodar o projeto?
 
 - Clone este repositório com
 ```json
 git clone https://github.com/pierguinzani/sistemas-distribuidos-2020-3/
 ```
-- Instale as bibliotecas e rode o projeto com
+- entre na pasta do projeto final
 ```json
-yarn & yarn start
+cd projeto_final_SD
 ```
+- entre na pasta do backend, instale as bibliotecas e rode o servidor
+```
+cd Back-end
+```
+```
+yarn
+```
+```
+yarn start
+```
+- entre na pasta do frontend, instale as bibliotecas e rode o projeto
+```
+cd Front-end
+```
+```
+yarn
+```
+```
+yarn start
+```
+## :memo: Licença
+
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
+
+---
+
+Feito com ❤️ by **pierguinzani**
+
+
