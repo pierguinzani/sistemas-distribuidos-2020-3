@@ -7,7 +7,7 @@
 
   #### Papaléguas - Sistema de pedidos online integrado ao WhatsApp
 
-  ![](https://img.shields.io/badge/autor-Pier%20Guinzani-blumarine)
+  ![](https://img.shields.io/badge/autor-Pier%20Guinzani-purple)
   ![](https://img.shields.io/badge/autor-Augusto%20Zanoni-orange)
   ![](https://img.shields.io/badge/Back--End-NodeJS-blue)
   ![](https://img.shields.io/badge/Front--End-ReactJS-yellow)
