@@ -1,6 +1,6 @@
 
 <h1 align="center">
-   Papaléguas
+   Artesanal Ayres Pedidos
 </h1>
 
 <div align="center">
@@ -43,7 +43,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O **Papaléguas** é um sistema de pedidos online da Hamburgueria ludovicense Artesanal Ayres, que integrado ao WhatsApp facilita o processo de padronização dos pedidos e direcionamento para apenas um canal (o WhatsApp).
+O **Artesanal Ayres Pedidos** é um sistema de pedidos online da Hamburgueria ludovicense Artesanal Ayres, que integrado ao WhatsApp facilita o processo de padronização dos pedidos e direcionamento para apenas um canal (o WhatsApp).
 
 ## 🤔 Como rodar o projeto?
 
