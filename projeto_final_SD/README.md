@@ -76,12 +76,12 @@ yarn
 yarn start
 ```
 - Acesse o projeto em http://localhost:3000
-## :memo: Licença
+## :memo: Acesse o projeto no Heroku
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
+https://artesanal-ayres.herokuapp.com
 
 ---
 
-Feito com ❤️ by **pierguinzani**
+Feito com ❤️
 
 
