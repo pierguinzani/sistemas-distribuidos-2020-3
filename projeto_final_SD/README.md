@@ -82,6 +82,6 @@ https://artesanal-ayres.herokuapp.com
 
 ---
 
-Feito com ❤️
+Feito na base do ódio ❤️
 
 
